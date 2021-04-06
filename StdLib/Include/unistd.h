@@ -37,9 +37,6 @@ int             dup(int);
 int             rename(const char *, const char *);
 
 /* Functions implemented for compatibility. */
-int             getopt(int, char * const [], const char *);
-extern   char  *optarg;     /* getopt(3) external variables */
-extern   int    optind;
 pid_t           getpgrp(void);
 pid_t           tcgetpgrp(int);
 char           *getpass(const char *);
@@ -156,9 +153,6 @@ long            sysconf(int);
 int             tcsetpgrp(int, pid_t);
 __aconst char  *ttyname(int);
 
-extern   int    opterr;
-extern   int    optopt;
-extern   int    optreset;
 extern   char  *suboptarg;
 
 int             setegid(gid_t);
